@@ -1,0 +1,10 @@
+https://dschwa19.github.io/pleaseWork/
+
+In order to launch my angular app on the above url I had to install
+npm git pages through the command line.
+Then i had to use a -prod command to "put the app in production"?
+Afterward I got an error saying it didn't like my file structure,
+so I had to move files around until it was happy and stopped complaining
+to me. I also had to specify where the origin was and it was the url
+for the website I chose. I also cloned my repository for my working 
+project to not mess that up further than I already have.
