@@ -1,0 +1,9 @@
+<h1 class="h1">Post {{post.id}}</h1>
+<p>
+  <span style="font-weight: bold">UserID:
+  </span>: {{post.userId}}</p>
+<p>
+  <span style="font-weight: bold">Body:
+    </span>
+  {{post.body}}</p>
+<app-comments [postId]="post.id"></app-comments>

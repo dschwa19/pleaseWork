@@ -1,27 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
-import { PostsComponent } from './posts.component';
-import { PostsService } from './posts.service';
+import { AppComponent } from './app.component';
+import { PostComponent } from './post/post.component';
+import { PostsComponent } from './posts/posts.component';
+import { CommentsComponent } from './comments/comments.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    PostsComponent
+    AppComponent,
+    PostComponent,
+    PostsComponent,
+    CommentsComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     HttpClientModule
   ],
-  providers: [
-    PostsService
-  ],
-  bootstrap: [
-    PostsComponent
-  ]
+
+  providers: [],
+  bootstrap: [AppComponent]
 })
+
 export class AppModule { }

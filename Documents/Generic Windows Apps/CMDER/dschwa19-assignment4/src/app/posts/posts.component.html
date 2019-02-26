@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li *ngFor='let post of posts' class="list-group-item">
+    <span>Post {{post.id}}</span>
+    <a class="float-right" routerLink='/post/{{post.id}}'>
+        <button class='btn btn-primary'>View Post</button>
+    </a>
+  </li>
+</ul>
